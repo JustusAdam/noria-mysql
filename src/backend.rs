@@ -737,7 +737,7 @@ where
             .map(|te| ops.fetch_add(1, atomic::Ordering::AcqRel) % te == 0)
             .unwrap_or(false)
         {
-            noria::trace_my_next_op();
+            //noria::trace_my_next_op();
         }
 
         let result = if let Some(ref update_fields) = q.on_duplicate {
@@ -826,7 +826,7 @@ where
             .map(|te| ops.fetch_add(1, atomic::Ordering::AcqRel) % te == 0)
             .unwrap_or(false)
         {
-            noria::trace_my_next_op();
+            //noria::trace_my_next_op();
         }
 
         // if first lookup fails, there's no reason to try the others
@@ -890,7 +890,7 @@ where
             .map(|te| ops.fetch_add(1, atomic::Ordering::AcqRel) % te == 0)
             .unwrap_or(false)
         {
-            noria::trace_my_next_op();
+            //noria::trace_my_next_op();
         }
 
         match mutator.update(key, updates) {

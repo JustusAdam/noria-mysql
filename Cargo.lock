@@ -291,11 +291,10 @@ dependencies = [
 [[package]]
 name = "common"
 version = "0.1.0"
-source = "git+https://github.com/mit-pdos/noria.git#c8e33666f5933ee4af31dcb9029c5e08cce9081b"
 dependencies = [
  "arccstr 1.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "chrono 0.4.7 (registry+https://github.com/rust-lang/crates.io-index)",
- "noria 0.1.2 (git+https://github.com/mit-pdos/noria.git)",
+ "noria 0.1.2",
  "petgraph 0.4.13 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.94 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_derive 1.0.94 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -387,11 +386,10 @@ dependencies = [
 [[package]]
 name = "dataflow"
 version = "0.1.0"
-source = "git+https://github.com/mit-pdos/noria.git#c8e33666f5933ee4af31dcb9029c5e08cce9081b"
 dependencies = [
  "backtrace 0.3.32 (registry+https://github.com/rust-lang/crates.io-index)",
  "bincode 1.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
- "common 0.1.0 (git+https://github.com/mit-pdos/noria.git)",
+ "common 0.1.0",
  "evmap 5.0.0 (git+https://github.com/jonhoo/rust-evmap?branch=eviction)",
  "fnv 1.0.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures 0.1.28 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -399,7 +397,7 @@ dependencies = [
  "itertools 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "jemallocator 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "nom-sql 0.0.6 (git+https://github.com/ms705/nom-sql.git)",
- "noria 0.1.2 (git+https://github.com/mit-pdos/noria.git)",
+ "noria 0.1.2",
  "petgraph 0.4.13 (registry+https://github.com/rust-lang/crates.io-index)",
  "rahashmap 0.2.13 (registry+https://github.com/rust-lang/crates.io-index)",
  "rand 0.6.5 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -901,10 +899,9 @@ dependencies = [
 [[package]]
 name = "mir"
 version = "0.1.0"
-source = "git+https://github.com/mit-pdos/noria.git#c8e33666f5933ee4af31dcb9029c5e08cce9081b"
 dependencies = [
- "common 0.1.0 (git+https://github.com/mit-pdos/noria.git)",
- "dataflow 0.1.0 (git+https://github.com/mit-pdos/noria.git)",
+ "common 0.1.0",
+ "dataflow 0.1.0",
  "nom-sql 0.0.6 (git+https://github.com/ms705/nom-sql.git)",
  "petgraph 0.4.13 (registry+https://github.com/rust-lang/crates.io-index)",
  "regex 1.1.9 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1026,7 +1023,6 @@ dependencies = [
 [[package]]
 name = "noria"
 version = "0.1.2"
-source = "git+https://github.com/mit-pdos/noria.git#c8e33666f5933ee4af31dcb9029c5e08cce9081b"
 dependencies = [
  "arccstr 1.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "assert_infrequent 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1058,7 +1054,6 @@ dependencies = [
  "tower-discover 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "tower-service 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "tower-util 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "tracing 0.1.3 (git+https://github.com/tokio-rs/tracing.git)",
  "vec_map 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "zookeeper 0.5.6 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -1075,8 +1070,8 @@ dependencies = [
  "msql-srv 0.8.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "mysql 16.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "nom-sql 0.0.6 (git+https://github.com/ms705/nom-sql.git)",
- "noria 0.1.2 (git+https://github.com/mit-pdos/noria.git)",
- "noria-server 0.1.0 (git+https://github.com/mit-pdos/noria.git)",
+ "noria 0.1.2",
+ "noria-server 0.1.0",
  "regex 1.1.9 (registry+https://github.com/rust-lang/crates.io-index)",
  "slog 2.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "slog-term 2.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1090,24 +1085,23 @@ dependencies = [
 [[package]]
 name = "noria-server"
 version = "0.1.0"
-source = "git+https://github.com/mit-pdos/noria.git#c8e33666f5933ee4af31dcb9029c5e08cce9081b"
 dependencies = [
  "async-bincode 0.4.9 (registry+https://github.com/rust-lang/crates.io-index)",
  "bincode 1.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "bufstream 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "clap 2.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "common 0.1.0 (git+https://github.com/mit-pdos/noria.git)",
- "dataflow 0.1.0 (git+https://github.com/mit-pdos/noria.git)",
+ "common 0.1.0",
+ "dataflow 0.1.0",
  "failure 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "fnv 1.0.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures 0.1.28 (registry+https://github.com/rust-lang/crates.io-index)",
  "hostname 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "hyper 0.12.33 (registry+https://github.com/rust-lang/crates.io-index)",
  "mio 0.6.19 (registry+https://github.com/rust-lang/crates.io-index)",
- "mir 0.1.0 (git+https://github.com/mit-pdos/noria.git)",
+ "mir 0.1.0",
  "nom 4.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "nom-sql 0.0.6 (git+https://github.com/ms705/nom-sql.git)",
- "noria 0.1.2 (git+https://github.com/mit-pdos/noria.git)",
+ "noria 0.1.2",
  "petgraph 0.4.13 (registry+https://github.com/rust-lang/crates.io-index)",
  "rand 0.6.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.94 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1128,8 +1122,6 @@ dependencies = [
  "tokio-tower 0.1.1 (git+https://github.com/tower-rs/tokio-tower.git)",
  "tower 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "tower-util 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "tracing 0.1.3 (git+https://github.com/tokio-rs/tracing.git)",
- "tracing-fmt 0.1.0 (git+https://github.com/tokio-rs/tracing.git)",
  "vec_map 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "zookeeper 0.5.6 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -2163,15 +2155,6 @@ dependencies = [
 [[package]]
 name = "tracing"
 version = "0.1.3"
-source = "git+https://github.com/tokio-rs/tracing.git#2cfc5130b64242a22b085ca06aa40e74c429a784"
-dependencies = [
- "cfg-if 0.1.9 (registry+https://github.com/rust-lang/crates.io-index)",
- "tracing-core 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "tracing"
-version = "0.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "cfg-if 0.1.9 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -2437,7 +2420,6 @@ dependencies = [
 "checksum clang-sys 0.26.4 (registry+https://github.com/rust-lang/crates.io-index)" = "6ef0c1bcf2e99c649104bd7a7012d8f8802684400e03db0ec0af48583c6fa0e4"
 "checksum clap 2.33.0 (registry+https://github.com/rust-lang/crates.io-index)" = "5067f5bb2d80ef5d68b4c87db81601f0b75bca627bc2ef76b141d7b846a3c6d9"
 "checksum cloudabi 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)" = "ddfc5b9aa5d4507acaf872de71051dfd0e309860e88966e1051e462a077aac4f"
-"checksum common 0.1.0 (git+https://github.com/mit-pdos/noria.git)" = "<none>"
 "checksum constant_time_eq 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)" = "8ff012e225ce166d4422e0e78419d901719760f62ae2b7969ca6b564d1b54a9e"
 "checksum crc32fast 1.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "ba125de2af0df55319f41944744ad91c71113bf74a4646efff39afe1f6842db1"
 "checksum crossbeam 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)" = "b14492071ca110999a20bf90e3833406d5d66bfd93b4e52ec9539025ff43fe0d"
@@ -2447,7 +2429,6 @@ dependencies = [
 "checksum crossbeam-epoch 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)" = "04c9e3102cc2d69cd681412141b390abd55a362afc1540965dad0ad4d34280b4"
 "checksum crossbeam-queue 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "7c979cd6cfe72335896575c6b5688da489e420d36a27a0b9eb0c73db574b4a4b"
 "checksum crossbeam-utils 0.6.5 (registry+https://github.com/rust-lang/crates.io-index)" = "f8306fcef4a7b563b76b7dd949ca48f52bc1141aa067d2ea09565f3e2652aa5c"
-"checksum dataflow 0.1.0 (git+https://github.com/mit-pdos/noria.git)" = "<none>"
 "checksum digest 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)" = "f3d0c8c8752312f9713efd397ff63acb9f85585afbf179282e720e7704954dd5"
 "checksum dirs 1.0.5 (registry+https://github.com/rust-lang/crates.io-index)" = "3fd78930633bd1c6e35c4b42b1df7b0cbc6bc191146e512bb3bedf243fcc3901"
 "checksum either 1.5.2 (registry+https://github.com/rust-lang/crates.io-index)" = "5527cfe0d098f36e3f8839852688e63c8fff1c90b2b405aef730615f9a7bcf7b"
@@ -2503,7 +2484,6 @@ dependencies = [
 "checksum mio-extras 2.0.5 (registry+https://github.com/rust-lang/crates.io-index)" = "46e73a04c2fa6250b8d802134d56d554a9ec2922bf977777c805ea5def61ce40"
 "checksum mio-uds 0.6.7 (registry+https://github.com/rust-lang/crates.io-index)" = "966257a94e196b11bb43aca423754d87429960a768de9414f3691d6957abf125"
 "checksum miow 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "8c1f2f3b1cf331de6896aabf6e9d55dca90356cc9960cca7eaaf408a355ae919"
-"checksum mir 0.1.0 (git+https://github.com/mit-pdos/noria.git)" = "<none>"
 "checksum msql-srv 0.8.4 (registry+https://github.com/rust-lang/crates.io-index)" = "b3e0f9ab99adbbb25f7f79a05788539b6e3ca668bd293d0b1981b8de20c6aba4"
 "checksum mysql 16.0.2 (registry+https://github.com/rust-lang/crates.io-index)" = "67664b7093272a4e5e084ef8a3adf7f34217c3ca4b80498a9c6cda83ecec1304"
 "checksum mysql_common 0.17.1 (registry+https://github.com/rust-lang/crates.io-index)" = "c30560f469165dc692160f58a0e89919e705300a53f3b0de069301a1ee37395c"
@@ -2513,8 +2493,6 @@ dependencies = [
 "checksum nodrop 0.1.13 (registry+https://github.com/rust-lang/crates.io-index)" = "2f9667ddcc6cc8a43afc9b7917599d7216aa09c463919ea32c59ed6cac8bc945"
 "checksum nom 4.2.3 (registry+https://github.com/rust-lang/crates.io-index)" = "2ad2a91a8e869eeb30b9cb3119ae87773a8f4ae617f41b1eb9c154b2905f7bd6"
 "checksum nom-sql 0.0.6 (git+https://github.com/ms705/nom-sql.git)" = "<none>"
-"checksum noria 0.1.2 (git+https://github.com/mit-pdos/noria.git)" = "<none>"
-"checksum noria-server 0.1.0 (git+https://github.com/mit-pdos/noria.git)" = "<none>"
 "checksum num-bigint 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)" = "57450397855d951f1a41305e54851b1a7b8f5d2e349543a02a2effe25459f718"
 "checksum num-integer 0.1.41 (registry+https://github.com/rust-lang/crates.io-index)" = "b85e541ef8255f6cf42bbfe4ef361305c6c135d10919ecc26126c4e5ae94bc09"
 "checksum num-traits 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)" = "6ba9a427cfca2be13aa6f6403b0b7e7368fe982bfa16fccc450ce74c46cd9b32"
@@ -2625,7 +2603,6 @@ dependencies = [
 "checksum tower-service 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "2cc0c98637d23732f8de6dfd16494c9f1559c3b9e20b4a46462c8f9b9e827bfa"
 "checksum tower-timeout 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "daa179ec4087589dc67148dc661abce5badc2c3ed4197adc7bd64b39f1f33c31"
 "checksum tower-util 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "4792342fac093db5d2558655055a89a04ca909663467a4310c7739d9f8b64698"
-"checksum tracing 0.1.3 (git+https://github.com/tokio-rs/tracing.git)" = "<none>"
 "checksum tracing 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)" = "9509c828e884d3289fb843055b1462be5f5b54e4b1f21d39e6cc465fe861f4fc"
 "checksum tracing-core 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "b15b1e1f124b19a23d87d54613077bf5249e5f13a5cd39e2f2a50afef938ca05"
 "checksum tracing-fmt 0.1.0 (git+https://github.com/tokio-rs/tracing.git)" = "<none>"
